@@ -31,6 +31,7 @@ table tr:nth-child(even)
 table th, table td
 {
     padding: 10px 15px;
+    border: 1px solid #586e75;
 }
 
 /*table th
@@ -39,7 +40,7 @@ table th, table td
     border: 1px solid #586e75;
 }*/
 
-table td
+table th
 {
-    border: 1px solid #586e75;
+	text-align: center;
 }
