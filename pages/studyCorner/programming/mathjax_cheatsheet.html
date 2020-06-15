@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Mathjax Cheatsheet | pushkar147</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Pushkar Patkar" />
+	<meta name="description" content="Mathjax Cheatsheet" />
+	<link rel="stylesheet" href="../../../css/style.css">
+	<script src="../../../js/includeHTML.js"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+	<div include-HTML = "header.html"> </div>
+<!--	begining of the content	-->
+
+<style type="text/css">
+	table tr:nth-child(even) {	background-color: #200000;	}
+</style>
+
+<table>
+	<tr>
+		<th rowspan="2"> Description </th>
+		<th rowspan="2"> Syntax </th>
+		<th colspan="2"> Example </th>
+	</tr>
+	<tr>
+		<th> Code </th>
+		<th> Output </th>
+	</tr>
+	<tr>
+		<td rowspan="2">To enclose formula </td>
+		<td> <code>\( &emsp; \)</code> &emsp; for inline formula </td>
+		<td> We have <code> \( x = 1 \) </code>	</td>
+		<td> We have \( x = 1 \) </td>
+	</tr>
+	<tr>
+		<td> <code>\[ &emsp; \]</code> &emsp; for center-aligned formula </td>
+		<td> We have <code> \[ x = 1 \] </code>	</td>
+		<td> We have \[x^2 = 1 \] </td>
+	</tr>
+	<tr>
+		<td rowspan="2"> Greek Letters </td>
+		<td> \alpha , \beta , \gamma, \delta , ... , \omega </td>
+		<td> \theta </td>
+		<td> \( \theta \) </td>
+	</tr>
+	<tr>
+		<td> \Gamma, \Delta , ... , \Omega </td>
+		<td> \Pi </td>
+		<td> \( \Pi \) </td>
+	</tr>
+	<tr>
+		<td rowspan="2"> Subscript and Superscripts </td>
+		<td> _ </td>
+		<td> A_i </td>
+		<td> \( A_i \) </td>
+	</tr>
+	<tr>
+		<td> ^ </td>
+		<td> e^x </td>
+		<td> \( e^x \) </td>
+	</tr>
+	<tr>
+		<td rowspan="2"> Fractions </td>
+		<td> \frac  </td>
+		<td> \frac a b </td>
+		<td> \( \frac a b \) </td>
+	</tr>
+	<tr>
+		<td> \over </td>
+		<td> n \over 2 </td>
+		<td> \( n \over 2 \) </td>
+	</tr>
+	<tr>
+		<td> Groups </td>
+		<td> { ... } </td>
+		<td> x_ n + 1 <br> x_ { n + 1 } </td>
+		<td> \( x_ n + 1 \) <br> \( x_ { n + 1 } \) </td>
+	</tr>
+	<tr>
+		<td rowspan="8"> Parentheses </td>
+		<td> ( ... ) </td>
+		<td> (a + b)^n </td>
+		<td> \( (a + b)^n \) </td>
+	</tr>
+	<tr>
+		<td> [ ... ] </td>
+		<td> 3*[a + 1] </td>
+		<td> \( 3*[a + 1] \) </td>
+	</tr>
+	<tr>
+		<td> \{ ... \} <br> \lbrace ... \rbrace </td>
+		<td> 2 x + 3 - \{ x +2 \} <br> 3 y + 2 - \lbrace y + 3 \rbrace </td>
+		<td> \( 2 x + 3 - \{ x +2 \} \) <br> \( 3 y + 2 - \lbrace y + 3 \rbrace \) </td>
+	</tr>
+	<tr>
+		<td> | ... | <br> \vert </td>
+		<td> |x| <br> \vert y \vert </td>
+		<td> \( |x| \) <br> \( \vert y \vert \) </td>
+	</tr>
+	<tr>
+		<td> \Vert </td>
+		<td> \Vert z \Vert </td>
+		<td> \( \Vert z \Vert \) </td>
+	</tr>
+	<tr>
+		<td> \langle ... \rangle </td>
+		<td> \langle E \rangle </td>
+		<td> \( \langle E \rangle \) </td>
+	</tr>
+	<tr>
+		<td> \lceil ... \rceil </td>
+		<td> \lceil r \rceil </td>
+		<td> \( \lceil r \rceil \) </td>
+	</tr>
+	<tr>
+		<td> \lfloor ... \rfloor </td>
+		<td> \lfloor r \rfloor </td>
+		<td> \( \lfloor r \rfloor \) </td>
+	</tr>
+	<tr>
+		<td>Automatically scalable parentheses </td>
+		<td> \left ... ... \right ... </td>
+		<td> \left [ 1 \over 2 \right ] </td>
+		<td> \( \left [ 1 \over 2 \right ] \) </td>
+	</tr>
+	<tr>
+		<td>Inivisble parentheses </td>
+		<td> . </td>
+		<td> \left .  x \over 2 \right ) </td>
+		<td> \( \left . x \over 2 \right ) \) </td>
+	</tr>
+	<tr>
+		<td rowspan="2">Manually sized parentheses </td>
+		<td> \bigl ... \bigr </td>
+		<td> \bigl ( a \bigr ) </td>
+		<td> \( \bigl ( a \bigr ) \) </td>
+	</tr>
+	<tr>
+		<td> \Biggl ... \Biggr </td>
+		<td> \Biggl ( a \Biggr ) </td>
+		<td> \( \Biggl ( a \Biggr ) \) </td>
+	</tr>
+</table>
+
+<br>
+<b>Note : </b> Add following lines in your HTML file to enable Mathjax.
+<blockquote> &lt;script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js"&gt;&lt;/script&gt; </blockquote>
+
+<!--	end of the content	-->
+	<div include-HTML = "footer.html"> </div>
+	<script> includeHTML(); </script>
+</body>
+
+</html>
