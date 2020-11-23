@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Special Polynomials | pushkar147</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Pushkar Patkar" />
+	<meta name="description" content="Legendre, Bessel, Hermite, Laguree" />
+	<link rel="stylesheet" href="../../../../css/style.css">
+	<script src="../../../../js/includeHTML.js"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+	<div include-HTML = "header.html"> </div>
+<!--	begining of the content	-->
+
+<style type="text/css">
+	table tr:nth-child(even) {	background-color: #200000;	}
+</style>
+
+<table>
+	<tr>
+		<th></th>
+		<th>Generating function</th>
+		<th>Recurrence relations</th>
+		<th>Differential equations</th>
+		<th>Rodrigues & Explicit Formulae</th>
+		<th>First few terms</th>
+		<th>Orthogonality & Parity</th>
+		<th>Applications</th>
+	</tr>
+	<tr>
+		<td><b>Legendre Polynomial</b></td>
+		<td>\[ {1 \over \sqrt { 1-2xt +t^2}} = \sum_{\ell=0}^\infty {P_\ell (x) t^\ell}\]</td>
+		
+		<td><ul>
+			<li>\[(\ell+1)P_{\ell+1}  = (2\ell+1) x P_\ell  -\ell P_{\ell-1}\]</li>
+			<li>\[ (2\ell+1) P_\ell= {d \over dx} \bigg( P_{\ell+1} - P_{\ell-1} \bigg) \]</li>
+			<li>\[{dP_{\ell+1} \over dx} = (\ell+1) P_\ell+x{dP_\ell \over dx}  \]</li>
+		</ul></td>
+		
+		<td><ul>
+			<li>\[ {d \over dx} \left[ (1-x^2) {dP_\ell \over dx} \right] +\ell (\ell+1) P_\ell = 0 \]</li>
+			<li>\[   (1-x^2) {d^2 P_\ell \over dx^2} - 2x{d P_\ell \over dx}  +\ell (\ell+1) P_\ell = 0 \]</li>
+		</ul></td>
+		
+		<td><ul>
+			<li>\[P_\ell (x)= {1 \over 2^\ell \ell !}{d^\ell \over dx^\ell} (x^2 -1)^\ell \]</li>
+			<li>\[P_\ell (x)= \sum_{k=0}^\infty {\ell \choose k}{\ell+k \choose k} \left(x-1 \over 2\right)^k  \]</li>
+		</ul></td>
+		
+		<td><ul>
+			<li>\[ P_0 (x) = 1\]</li>
+			<li>\[ P_1 (x) = x\]</li>
+			<li>\[ P_2 (x) = {1\over 2} (3 x^2-1)\]</li>
+			<li>\[ P_3 (x) = {1\over 2} (5x^3-3x)\]</li>
+		</ul></td>
+		
+		<td><ul>
+			<li>\[ \int_{-1}^1 P_m P_n dx = {2 \over 2n +1}\delta_mn \]</li>
+			<li>\[ P_\ell (-x) = (-1)^\ell P_\ell(x)\]</li>
+		</ul></td>
+		
+		<td><ul>
+			<li>
+				Solution of Laplace equation : \( \nabla^2 \Phi = 0 \)	<br>
+				(Using Azimuthal symmetry)
+				\[ \Phi(r,\theta) = \sum_\ell \left(A_\ell r^\ell + {B_\ell \over r^{\ell+1}} \right) P_\ell(cos \theta) \]
+			</li>
+			<li>Multipole exapnsion <ul>
+				<li>Monopole  \[ \Phi(r) \propto {q \over r} \times 1 \] </li>
+				<li>Dipole  \[ \Phi(r) \propto {q r' \over r^2} \times cos \theta \] </li>
+				<li>Quadrupole  \[ \Phi(r) \propto {q {r'}^2 \over r^3} \times {3 cos^2 \theta -1 \over2 } \] </li>
+			</ul></li>
+		</ul></td>
+		<!--Legendre polynomial completed -->
+	</tr>
+</table>
+
+<br>
+
+<!--	end of the content	-->
+	<div include-HTML = "footer.html"> </div>
+	<script> includeHTML(); </script>
+</body>
+
+</html>
