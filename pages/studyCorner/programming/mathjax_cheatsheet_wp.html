@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Mathjax Cheatsheet | pushkar147</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Pushkar Patkar" />
+	<meta name="description" content="Mathjax Cheatsheet" />
+	<link rel="stylesheet" href="../../../css/style.css">
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+<style type="text/css">
+	table tr:nth-child(even) {	background-color: #200000;	}
+</style>
+<center>
+	<h1 style="vertical-align: center"> <a href="https://pushkar147.wordpress.com">
+		<img src="../../../img/Logo_100.png" height="48" width="48" > pushkar147
+	</a> </h1>
+</center>
+<hr>
+
+<table>
+	<tr>
+		<th rowspan="2"> Description </th>
+		<th rowspan="2"> Syntax </th>
+		<th colspan="2"> Example </th>
+	</tr>
+	<tr>
+		<th> Code </th>
+		<th> Output </th>
+	</tr>
+	<tr>
+		<td rowspan="2">To enclose formula </td>
+		<td> <code>\( &emsp; \)</code> &emsp; for inline formula </td>
+		<td> We have <code> \( x = 1 \) </code>	</td>
+		<td> We have \( x = 1 \) </td>
+	</tr>
+	<tr>
+		<td> <code>\[ &emsp; \]</code> &emsp; for center-aligned formula </td>
+		<td> We have <code> \[ x = 1 \] </code>	</td>
+		<td> We have \[x^2 = 1 \] </td>
+	</tr>
+	<tr>
+		<td rowspan="5"> Greek Letters </td>
+		<td> \alpha , \beta , \gamma, \delta , ... , \omega </td>
+		<td> \theta </td>
+		<td> \( \theta \) </td>
+	</tr>
+	<tr>
+		<td> \Gamma, \Delta , ... , \Omega </td>
+		<td> \Pi </td>
+		<td> \( \Pi \) </td>
+	</tr>
+	<tr>
+		<td> \varepsilon </td>
+		<td> \varepsilon, \epsilon </td>
+		<td> \( \varepsilon, \epsilon \) </td>
+	</tr>
+	<tr>
+		<td> \varphi </td>
+		<td> \varphi, \phi </td>
+		<td> \( \varphi, \phi \) </td>
+	</tr>
+	<tr>
+		<td> \ell </td>
+		<td> \ell, l </td>
+		<td> \( \ell, l \) </td>
+	</tr>
+	<tr>
+		<td rowspan="2"> Subscript and Superscripts </td>
+		<td> _ </td>
+		<td> A_i </td>
+		<td> \( A_i \) </td>
+	</tr>
+	<tr>
+		<td> ^ </td>
+		<td> e^x </td>
+		<td> \( e^x \) </td>
+	</tr>
+	<tr>
+		<td rowspan="2"> Fractions </td>
+		<td> \frac  </td>
+		<td> \frac a b </td>
+		<td> \( \frac a b \) </td>
+	</tr>
+	<tr>
+		<td> \over </td>
+		<td> n \over 2 </td>
+		<td> \( n \over 2 \) </td>
+	</tr>
+	<tr>
+		<td> Groups </td>
+		<td> { ... } </td>
+		<td> x_ n + 1 <br> x_ { n + 1 } </td>
+		<td> \( x_ n + 1 \) <br> \( x_ { n + 1 } \) </td>
+	</tr>
+	<tr>
+		<td rowspan="8"> Parentheses </td>
+		<td> ( ... ) </td>
+		<td> (a + b)^n </td>
+		<td> \( (a + b)^n \) </td>
+	</tr>
+	<tr>
+		<td> [ ... ] </td>
+		<td> 3*[a + 1] </td>
+		<td> \( 3*[a + 1] \) </td>
+	</tr>
+	<tr>
+		<td> \{ ... \} <br> \lbrace ... \rbrace </td>
+		<td> 2 x + 3 - \{ x +2 \} <br> 3 y + 2 - \lbrace y + 3 \rbrace </td>
+		<td> \( 2 x + 3 - \{ x +2 \} \) <br> \( 3 y + 2 - \lbrace y + 3 \rbrace \) </td>
+	</tr>
+	<tr>
+		<td> | ... | <br> \vert </td>
+		<td> |x| <br> \vert y \vert </td>
+		<td> \( |x| \) <br> \( \vert y \vert \) </td>
+	</tr>
+	<tr>
+		<td> \Vert </td>
+		<td> \Vert z \Vert </td>
+		<td> \( \Vert z \Vert \) </td>
+	</tr>
+	<tr>
+		<td> \langle ... \rangle </td>
+		<td> \langle E \rangle </td>
+		<td> \( \langle E \rangle \) </td>
+	</tr>
+	<tr>
+		<td> \lceil ... \rceil </td>
+		<td> \lceil r \rceil </td>
+		<td> \( \lceil r \rceil \) </td>
+	</tr>
+	<tr>
+		<td> \lfloor ... \rfloor </td>
+		<td> \lfloor r \rfloor </td>
+		<td> \( \lfloor r \rfloor \) </td>
+	</tr>
+	<tr>
+		<td>Automatically scalable parentheses </td>
+		<td> \left ... ... \right ... </td>
+		<td> \left [ 1 \over 2 \right ] </td>
+		<td> \( \left [ 1 \over 2 \right ] \) </td>
+	</tr>
+	<tr>
+		<td>Inivisble parentheses </td>
+		<td> . </td>
+		<td> \left .  x \over 2 \right ) </td>
+		<td> \( \left . x \over 2 \right ) \) </td>
+	</tr>
+	<tr>
+		<td rowspan="2">Manually sized parentheses </td>
+		<td> \bigl ... \bigr </td>
+		<td> \bigl ( a \bigr ) </td>
+		<td> \( \bigl ( a \bigr ) \) </td>
+	</tr>
+	<tr>
+		<td> \Biggl ... \Biggr </td>
+		<td> \Biggl ( a \Biggr ) </td>
+		<td> \( \Biggl ( a \Biggr ) \) </td>
+	</tr>
+	<tr>
+		<td rowspan="3"> Spaces </td>
+		<td> \; </td>
+		<td> a \; b </td>
+		<td> \( a \; b \) </td>
+	</tr>
+	<tr>
+		<td> \quad </td>
+		<td> a \quad b </td>
+		<td> \( a \quad b \) </td>
+	</tr>
+	<tr>
+		<td> \qquad </td>
+		<td> a \qquad b </td>
+		<td> \( a \qquad b \) </td>
+	</tr>
+	<tr>
+		<td> Plain text </td>
+		<td> \text{ ... } </td>
+		<td> \delta_ij = 1 \text{when} i = j </td>
+		<td> \( \delta_{ij} = 1 \text{ when } i = j \) </td>
+	</tr>
+	<tr>
+		<td rowspan="9"> Comparision </td>
+		<td> \lt </td>
+		<td> a \lt b </td>
+		<td> \( a \lt b \) </td>
+	</tr>
+	<tr>
+		<td> \gt </td>
+		<td> a \gt b </td>
+		<td> \( a \gt b \) </td>
+	</tr>
+	<tr>
+		<td> \ne <br> \neq </td>
+		<td> a \neq b </td>
+		<td> \( a \neq b \) </td>
+	</tr>
+	<tr>
+		<td> \le  </td>
+		<td> a \le b </td>
+		<td> \( a \le b \) </td>
+	</tr>
+	<tr>
+		<td> \leqq </td>
+		<td> a \leqq b </td>
+		<td> \( a \leqq b \) </td>
+	</tr>
+	<tr>
+		<td> \leqslant </td>
+		<td> a \leqslant b </td>
+		<td> \( a \leqslant b \) </td>
+	</tr>
+	<tr>
+		<td> \ge  </td>
+		<td> a \ge b </td>
+		<td> \( a \ge b \) </td>
+	</tr>
+	<tr>
+		<td> \geqq </td>
+		<td> a \geqq b </td>
+		<td> \( a \geqq b \) </td>
+	</tr>
+	<tr>
+		<td> \geqslant </td>
+		<td> a \geqslant b </td>
+		<td> \( a \geqslant b \) </td>
+	</tr>
+	<tr>
+		<td rowspan="5"> Arithmatic symbols </td>
+		<td> \times </td>
+		<td> a \times b </td>
+		<td> \( a \times b \) </td>
+	</tr>
+	<tr>
+		<td> \div </td>
+		<td> a \div b </td>
+		<td> \( a \div b \) </td>
+	</tr>
+	<tr>
+		<td> \pm </td>
+		<td> a \pm b </td>
+		<td> \( a \pm b \) </td>
+	</tr>
+	<tr>
+		<td> \mp </td>
+		<td> a \mp b </td>
+		<td> \( a \mp b \) </td>
+	</tr>
+	<tr>
+		<td> \cdot </td>
+		<td> a \cdot b </td>
+		<td> \( a \cdot b \) </td>
+	</tr>
+	<tr>
+		<td rowspan="9">Sets </td>
+		<td> \cup </td>
+		<td> A \cup B </td>
+		<td> \( A \cup B \) </td>
+	</tr>
+	<tr>
+		<td> \cap </td>
+		<td> A \cap B </td>
+		<td> \( A \cap B \) </td>
+	</tr>
+	<!--tr>
+		<td> \setminus </td>
+		<td> \setminus A </td>
+		<td> \(\setminus A \) </td>
+	</tr-->
+	<tr>
+		<td> \subset </td>
+		<td> A \subset B </td>
+		<td> \( A \subset B \) </td>
+	</tr>
+	<tr>
+		<td> \subseteq </td>
+		<td> A \subseteq B </td>
+		<td> \( A \subseteq B \) </td>
+	</tr>
+	<tr>
+		<td> \subsetneq </td>
+		<td> A \subsetneq B </td>
+		<td> \( A \subsetneq B \) </td>
+	</tr>
+	<tr>
+		<td> \supset </td>
+		<td> A \supset B </td>
+		<td> \( A \supset B \) </td>
+	</tr>
+	<tr>
+		<td> \in </td>
+		<td> a \in A </td>
+		<td> \( a \in A \) </td>
+	</tr>
+	<tr>
+		<td> \notin </td>
+		<td> a \notin A </td>
+		<td> \( a \notin A \) </td>
+	</tr>
+	<tr>
+		<td> \emptyset <br> \varnothing </td>
+		<td> \emptyset <br> \varnothing </td>
+		<td> \( \emptyset \) <br> \(  \varnothing \) </td>
+	</tr>
+	<tr>
+		<td rowspan="8"> Vectors </td>
+		<td> \vec </td>
+		<td> \vec r </td>
+		<td> \( \vec r \) </td>
+	</tr>
+	<tr>
+		<td> \overrightarrow </td>
+		<td> \overrightarrow r </td>
+		<td> \( \overrightarrow r \) </td>
+	</tr>
+	<tr>
+		<td> \overleftarrow </td>
+		<td> \overleftarrow r </td>
+		<td> \( \overleftarrow r \) </td>
+	</tr>
+	<tr>
+		<td> \overleftrightarrow </td>
+		<td> \overleftrightarrow r </td>
+		<td> \( \overleftrightarrow r \) </td>
+	</tr>
+	<tr>
+		<td> \bar </td>
+		<td> \bar r </td>
+		<td> \( \bar r \) </td>
+	</tr>
+	<tr>
+		<td> \overline </td>
+		<td> \overline r </td>
+		<td> \( \overline r \) </td>
+	</tr>
+	<tr>
+		<td> \hat </td>
+		<td> \hat r </td>
+		<td> \( \hat r \) </td>
+	</tr>
+	<tr>
+		<td> \widehat </td>
+		<td> \widehat r </td>
+		<td> \( \widehat r \) </td>
+	</tr>
+	<tr>
+		<td rowspan="2"> Combinations </td>
+		<td> \choose </td>
+		<td> n \choose r </td>
+		<td> \( n \choose r \) </td>
+	</tr>
+	<tr>
+		<td> \binom </td>
+		<td> \binom {n}{r} </td>
+		<td> \( \binom {n}{r} \) </td>
+	</tr>
+	<tr>
+		<td rowspan="7"> Arrows </td>
+		<td> \to <br> \rightarrow </td>
+		<td> \to <br> \rightarrow  </td>
+		<td> \( \to \) <br> \( \rightarrow \) </td>
+	</tr>
+	<tr>
+		<td> \leftarrow </td>
+		<td> \leftarrow  </td>
+		<td> \( \leftarrow \) </td>
+	</tr>
+	<tr>
+		<td> \Rightarrow </td>
+		<td> \Rightarrow  </td>
+		<td> \( \Rightarrow \) </td>
+	</tr>
+	<tr>
+		<td> \Leftarrow </td>
+		<td> \Leftarrow  </td>
+		<td> \( \Leftarrow \) </td>
+	</tr>
+	<tr>
+		<td> \longrightarrow </td>
+		<td> \longrightarrow  </td>
+		<td> \( \longrightarrow \) </td>
+	</tr>
+	<tr>
+		<td> \longleftarrow </td>
+		<td> \longleftarrow  </td>
+		<td> \( \longleftarrow \) </td>
+	</tr>
+	<tr>
+		<td> \mapsto </td>
+		<td> \mapsto  </td>
+		<td> \( \mapsto \) </td>
+	</tr>
+	<tr>
+		<td rowspan="8"> Logical Symbols </td>
+		<td> \land </td>
+		<td> p \land q </td>
+		<td> \( p \land q \) </td>
+	</tr>
+	<tr>
+		<td> p \lor q </td>
+		<td> p \lor q </td>
+		<td> \( p \lor q \) </td>
+	</tr>
+	<tr>
+		<td> \forall </td>
+		<td> \forall \; n \in N </td>
+		<td> \( \forall \; n \in N \) </td>
+	</tr>
+	<tr>
+		<td> \exists </td>
+		<td> \exists \; x \in X </td>
+		<td> \( \exists \; x \in X \) </td>
+	</tr>
+	<tr>
+		<td> \top </td>
+		<td> \top </td>
+		<td> \( \top \) </td>
+	</tr>
+	<tr>
+		<td> \bot </td>
+		<td> \bot </td>
+		<td> \( \bot \) </td>
+	</tr>
+	<tr>
+		<td> \vdash </td>
+		<td> \vdash </td>
+		<td> \( \vdash \) </td>
+	</tr>
+	<tr>
+		<td> \vDash </td>
+		<td> \vDash </td>
+		<td> \( \vDash \) </td>
+	</tr>
+	<tr>
+		<td rowspan="2"> Reasoning </td>
+		<td> \because </td>
+		<td> \because x = 2, </td>
+		<td> \( \because x = 2, \) </td>
+	</tr>
+	<tr>
+		<td> \therefore </td>
+		<td> \therefore x^2 = 4 </td>
+		<td> \( \therefore x^2 = 4 \) </td>
+	</tr>
+	<tr>
+		<td rowspan="6"> Approximation, Similarity, etc. </td>
+		<td> \approx </td>
+		<td> \pi^2 \approx 10, </td>
+		<td> \( \pi^2 \approx 10 \) </td>
+	</tr>
+	<tr>
+		<td> sim </td>
+		<td> a \sim b </td>
+		<td> \( a \sim b \) </td>
+	</tr>
+	<tr>
+		<td> simeq </td>
+		<td> a \simeq b </td>
+		<td> \( a \simeq b \) </td>
+	</tr>
+	<tr>
+		<td> cong </td>
+		<td> a \cong b </td>
+		<td> \( a \cong b \) </td>
+	</tr>
+	<tr>
+		<td> equiv </td>
+		<td> a \equiv b </td>
+		<td> \( a \equiv b \) </td>
+	</tr>
+	<tr>
+		<td> pmod </td>
+		<td> a\equiv b\pmod n </td>
+		<td> \( a\equiv b\pmod n \) </td>
+	</tr>
+	<tr>
+		<td rowspan="4"> Dots </td>
+		<td> \dot </td>
+		<td> \dot </td>
+		<td> \( \dot x \) </td>
+	</tr>
+	<tr>
+		<td> \cdot </td>
+		<td> \cdot </td>
+		<td> \( x \cdot y \) </td>
+	</tr>
+	<tr>
+		<td> \dots </td>
+		<td> 1, 2, \dots , n </td>
+		<td> \( 1, 2, \dots , n \) </td>
+	</tr>
+	<tr>
+		<td> \cdots </td>
+		<td> 1 + 2 + \cdots + n </td>
+		<td> \( 1+2+ \cdots +n \) </td>
+	</tr>
+	<tr>
+		<td rowspan="4"> Differentials </td>
+		<td> \partial </td>
+		<td> \partial \over \partial x </td>
+		<td> \( \partial \over \partial x \) </td>
+	</tr>
+	<tr>
+		<td> \nabla </td>
+		<td> \nabla phi </td>
+		<td> \( \nabla \phi \) </td>
+	</tr>
+	<tr>
+		<td> \dot </td>
+		<td> \dot q </td>
+		<td> \( \dot q \) </td>
+	</tr>
+	<tr>
+		<td> \ddot </td>
+		<td> \ddot q </td>
+		<td> \( \ddot q \) </td>
+	</tr>
+	<tr>
+		<td rowspan="2"> Shapes </td>
+		<td> \angle </td>
+		<td> \angle B </td>
+		<td> \( \angle B \) </td>
+	</tr>
+	<tr>
+		<td> \triangle </td>
+		<td> \triangle PQR </td>
+		<td> \( \triangle PQR \) </td>
+	</tr>
+	<tr>
+		<td rowspan="6"> Miscellaneous </td>
+		<td> \star </td>
+		<td> \star </td>
+		<td> \( \star \) </td>
+	</tr>
+	<tr>
+		<td> \ast </td>
+		<td> A \ast B </td>
+		<td> \( A \ast B \) </td>
+	</tr>
+	<tr>
+		<td> \oplus </td>
+		<td> A \oplus B </td>
+		<td> \( A \oplus B \) </td>
+	</tr>
+	<tr>
+		<td> \circ </td>
+		<td> A \circ B </td>
+		<td> \( A \circ B \) </td>
+	</tr>
+	<tr>
+		<td> \bullet </td>
+		<td> A \bullet B </td>
+		<td> \( A \bullet B \) </td>
+	</tr>
+	<tr>
+		<td> \infty </td>
+		<td> \infty </td>
+		<td> \( \infty \) </td>
+	</tr>
+	<tr>
+		<td rowspan="3"> Escaped characters </td>
+		<td> \{ , \} </td>
+		<td> \{  \} </td>
+		<td> \( \{  \} \) </td>
+	</tr>
+	<tr>
+		<td> \_ </td>
+		<td> a\_n </td>
+		<td> \( a\_n \) </td>
+	</tr>
+	<tr>
+		<td> \backslash </td>
+		<td> A \backslash B </td>
+		<td> \( A \backslash B \) </td>
+	</tr>
+</table>
+
+<br>
+<b>Note : </b> Add following lines in your HTML file to enable Mathjax.
+<blockquote> &lt;script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js"&gt;&lt;/script&gt; </blockquote>
+
+<hr>
+<center>
+	<h2 style="vertical-align: center"> <a href="https://pushkar147.wordpress.com/programming/">
+		Back to main website
+	</a> </h2> 
+</center>
+
+<!--	end of the content	-->
+</body>
+
+</html>
