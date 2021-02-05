@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Special Polynomials | pushkar147</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Pushkar Patkar" />
+	<meta name="description" content="Legendre, Bessel, Hermite, Laguree" />
+	<link rel="stylesheet" href="../../../../css/style.css">
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+<center>
+	<h1 style="vertical-align: center"> <a href="https://pushkar147.wordpress.com">
+		<img src="../../../../img/Logo_100.png" height="48" width="48" > pushkar147
+	</a> </h1>
+</center>
+
+<!--style type="text/css">
+	table tr:nth-child(even) {	background-color: #200000;	}
+</style-->
+
+<table>
+	<tr>
+		<th></th>
+		<th>Generating function</th>
+		<th>Recurrence relations</th>
+		<th>Differential equations</th>
+		<th>Rodrigues & Explicit Formulae</th>
+		<th>First few terms</th>
+		<th>Orthogonality & Parity</th>
+		<th>Applications</th>
+	</tr>
+	
+	<!--Legendre polynomial -->
+	<tr>
+		<td><b>Legendre Polynomial</b></td>
+		<!--generating<-->
+		<td>\[ {1 \over \sqrt { 1-2xt +t^2}} = \sum_{\ell=0}^\infty {P_\ell (x) t^\ell}\]</td>
+		
+		<!--recurrence<-->
+		<td><ul>
+			<li>\[(\ell+1)P_{\ell+1}  = (2\ell+1) x P_\ell  -\ell P_{\ell-1}\]</li>
+			<li>\[ (2\ell+1) P_\ell= {d \over dx} \bigg( P_{\ell+1} - P_{\ell-1} \bigg) \]</li>
+			<li>\[{dP_{\ell+1} \over dx} = (\ell+1) P_\ell+x{dP_\ell \over dx}  \]</li>
+		</ul></td>
+		
+		<!--diff eqn -->
+		<td><ul>
+			<li>\[ {d \over dx} \left[ (1-x^2) {dP_\ell \over dx} \right] +\ell (\ell+1) P_\ell = 0 \]</li>
+			<li>\[   (1-x^2) {d^2 P_\ell \over dx^2} - 2x{d P_\ell \over dx}  +\ell (\ell+1) P_\ell = 0 \]</li>
+		</ul></td>
+		
+		<!-- rodrigues-->
+		<td><ul>
+			<li>\[P_\ell (x)= {1 \over 2^\ell \ell !}{d^\ell \over dx^\ell} (x^2 -1)^\ell \]</li>
+			<li>\[P_\ell (x)= \sum_{k=0}^\infty {\ell \choose k}{\ell+k \choose k} \left(x-1 \over 2\right)^k  \]</li>
+		</ul></td>
+		
+		<!--few terms-->
+		<td><ul>
+			<li>\[ P_0 (x) = 1\]</li>
+			<li>\[ P_1 (x) = x\]</li>
+			<li>\[ P_2 (x) = {1\over 2} (3 x^2-1)\]</li>
+			<li>\[ P_3 (x) = {1\over 2} (5x^3-3x)\]</li>
+		</ul></td>
+		
+		<!-- orthogonality -->
+		<td><ul>
+			<li>\[ \int_{-1}^1 P_m P_n dx = {2 \over 2n +1}\delta_{mn} \]</li>
+			<li>\[ P_\ell (-x) = (-1)^\ell P_\ell(x)\]</li>
+		</ul></td>
+		
+		<!-- applications-->
+		<td><ul>
+			<li>
+				Solution of Laplace equation : \( \nabla^2 \Phi = 0 \)	<br>
+				(Using Azimuthal symmetry)
+				\[ \Phi(r,\theta) = \sum_\ell \left(A_\ell r^\ell + {B_\ell \over r^{\ell+1}} \right) P_\ell(cos \theta) \]
+			</li>
+			<li>Multipole exapnsion <ul>
+				<li>Monopole  \[ \Phi(r) \propto {q \over r} \times 1 \] </li>
+				<li>Dipole  \[ \Phi(r) \propto {q r' \over r^2} \times cos \theta \] </li>
+				<li>Quadrupole  \[ \Phi(r) \propto {q {r'}^2 \over r^3} \times {3 cos^2 \theta -1 \over2 } \] </li>
+			</ul></li>
+		</ul></td>
+	</tr>
+	<!--Legendre polynomial completed -->
+	
+	<!--Hermite polynomial -->
+	<tr>
+		<td><b>Hermite Polynomial</b></td>
+		<!-- generating-->
+		<td>\[ e^{-t^2 +2xt} = \sum_{n=0}^\infty H_n (x) {t^n \over n!} \]</td>
+		<!-- recurrence-->
+		<td><ul>
+			<li>\[ H_{n+1} = 2x H_n - 2 n H_{n-1} \]</li>
+			<li>\[ {d H_{n} \over dx} = 2 n H_{n-1} \]</li>
+		</ul></td>
+		<!--diff eqn-->
+		<td>\[ {d^2 H_n \over dx^2} - 2x {d H_n \over dx} + 2 n H_n =0   \]</td>
+		<!--rodrigues-->
+		<td>\[ H_n (x) = (-1)^n e^{x^2}{d^n \over d x^n} e^{-x^2}   \]</td>
+		<!--few terms-->
+		<td><ul>
+			<li>\[ H_0 (x) = 1\]</li>
+			<li>\[ H_1 (x) = 2x\]</li>
+			<li>\[ H_2 (x) = 4x^2 -2 \]</li>
+			<li>\[ H_3 (x) = 8x^3-12x \]</li>
+		</ul></td>
+		<!-- orthogonality-->
+		<td><ul>
+			<li>\[ \int_{-\infty}^\infty H_m H_n dx = \sqrt \pi 2^n n! \delta_{mn} \]</li>
+			<li>\[ H_n (-x) = (-1)^n H_n (x) \]</li>
+		</ul></td>
+		<!-- applications -->
+		<td><ul>
+			<li> Quantum Harmonic Oscillator </li>
+		</ul></td>
+	</tr>
+	<!--Hermite polynomial completed -->
+	
+</table>
+
+<br>>
+<hr>
+<center>
+	<h2 style="vertical-align: center"> <a href="https://pushkar147.wordpress.com/programming/">
+		Back to main website
+	</a> </h2> 
+</center>
+
+<!--	end of the content	-->
+</body>
+
+</html>
